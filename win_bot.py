@@ -60,6 +60,7 @@ def is_admin():
  
 @bot.event
 async def on_ready():
+    await bot.change_presence(activity=discord.Game(name="!leaderboard"))
     print(f"✅ Bot is online as {bot.user}")
  
  
